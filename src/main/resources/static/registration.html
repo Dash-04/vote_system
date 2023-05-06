@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet"
+          href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+    <!-- Sign up form -->
+    <section class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="form-title">Registration</h2>
+
+                    <form th:action="@{/registration}" method="post" th:object="${user}"  class="register-form"
+                          id="register-form">
+                        <div class="form-group">
+                            <div th:if="${param.success}">
+                                <div class="alert alert-info">You have successfully registered!</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="vinn"><i
+                                        class="zmdi zmdi-account material-icons-name"></i></label> <input
+                                    type="text"  id="vinn" placeholder="Voter Identification Number"
+                                    th:field="*{vin}" required autofocus="autofocus" />
+                            </div>
+
+                            <label for="firstname"><i
+                                    class="zmdi zmdi-account material-icons-name"></i></label> <input
+                                type="text"  id="firstname" placeholder="First Name"
+                                th:field="*{firstName}" required autofocus="autofocus"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastname"><i
+                                    class="zmdi zmdi-account material-icons-name"></i></label> <input
+                                type="text"  id="lastname" placeholder="Last Name"
+                                th:field="*{lastName}" required autofocus="autofocus" />
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email"><i class="zmdi zmdi-email"></i></label> <input
+                                type="email" id="email" placeholder="Your Email"
+                                th:field="*{phoneNumber}" required autofocus="autofocus" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password"><i class="zmdi zmdi-lock"></i></label> <input
+                                type="password" id="password" placeholder="Password"
+                                th:field="*{password}" required autofocus="autofocus"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="repassword"><i class="zmdi zmdi-lock-outline"></i></label>
+                            <input type="password" id="repassword" placeholder="Repeat your password"
+                                   th:field="*{rePassword}" required autofocus="autofocus"/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term"
+                                   class="agree-term" /> <label for="agree-term"
+                                                                class="label-agree-term"><span><span></span></span>I
+                            agree all statements in <a href="#" class="term-service">Terms
+                                of service</a></label>
+                        </div>
+
+                        <p> Already have an account? <a href="/static" th:href="@{/onbording}" style="color: #498A33;"> LogIn </a> </p>
+
+
+                        <div class="form-group form-button">
+                            <input type="submit" name="signup" id="signup"
+                                   class="form-submit" value="REGISTER"/>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="signup-image">
+                    <figure>
+                        <img src="img/undraw.svg" alt="sing up image">
+                    </figure>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+<!-- JS -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="app.js"></script>
+
+
+
+</body>
+</html>
