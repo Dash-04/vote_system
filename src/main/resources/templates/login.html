@@ -30,7 +30,7 @@
 
                 <div class="signin-form">
                     <h2 class="form-title">Welcome Back</h2>
-                    <form th:action="@{/onboarding}" method="post"  class="register-form"
+                    <form th:action="@{/login.html}" method="post"  class="register-form"
                           id="login-form">
 
                         <div th:if="${param.error}">
@@ -62,12 +62,12 @@
 
 
 
-                        <p>Don't you have an account? <a href="/" th:href="@{/registration}" style="color: #498A33;"> SignUp</a></p>
+                        Don't you have an account? <a th:href="@{/adduser}" style="color: #498A33;"> SignUp</a>
 
 
                         <div class="form-group form-button">
                             <input type="submit" name="signin" id="signin"
-                                   class="form-submit" value="LOG IN"/>
+                                   a th:href="@{/home}" class="form-submit" value="LOG IN"/>
                         </div>
                     </form>
 
@@ -114,7 +114,7 @@
 </script>
 
 </body>
-<!-- This templates was made by Colorlib (https://colorlib.com) -->
+
 </html>
 
 </body>

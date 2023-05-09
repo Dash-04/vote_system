@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
@@ -18,19 +18,10 @@
                 <div class="signup-form">
                     <h2 class="form-title">Registration</h2>
 
-                    <form th:action="@{/registration}" method="post" th:object="${user}"  class="register-form"
+                    <form action="#" th:action="@{/adduser}" method="post" th:object="${user}"  class="register-form"
                           id="register-form">
                         <div class="form-group">
-                            <div th:if="${param.success}">
-                                <div class="alert alert-info">You have successfully registered!</div>
-                            </div>
 
-                            <div class="form-group">
-                                <label for="vinn"><i
-                                        class="zmdi zmdi-account material-icons-name"></i></label> <input
-                                    type="text"  id="vinn" placeholder="Voter Identification Number"
-                                    th:field="*{vin}" required autofocus="autofocus" />
-                            </div>
 
                             <label for="firstname"><i
                                     class="zmdi zmdi-account material-icons-name"></i></label> <input
@@ -42,25 +33,27 @@
                             <label for="lastname"><i
                                     class="zmdi zmdi-account material-icons-name"></i></label> <input
                                 type="text"  id="lastname" placeholder="Last Name"
-                                th:field="*{lastName}" required autofocus="autofocus" />
+                                th:field="*{LastName}" required autofocus="autofocus" />
                         </div>
 
 
                         <div class="form-group">
-                            <label for="email"><i class="zmdi zmdi-email"></i></label> <input
-                                type="email" id="email" placeholder="Your Email"
-                                th:field="*{phoneNumber}" required autofocus="autofocus" />
+                            <label for="vinn"><i
+                                    class="zmdi zmdi-account material-icons-name"></i></label> <input
+                                type="text"  id="vinn" placeholder="Voter Identification"
+                                th:field="*{vin}" required autofocus="autofocus" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="number"><i class="zmdi zmdi-email"></i></label> <input
+                                type="text" id="number" placeholder="Phone Number"
+                                th:field="*{PhoneNumber}" required autofocus="autofocus" />
                         </div>
 
                         <div class="form-group">
                             <label for="password"><i class="zmdi zmdi-lock"></i></label> <input
                                 type="password" id="password" placeholder="Password"
-                                th:field="*{password}" required autofocus="autofocus"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="repassword"><i class="zmdi zmdi-lock-outline"></i></label>
-                            <input type="password" id="repassword" placeholder="Repeat your password"
-                                   th:field="*{rePassword}" required autofocus="autofocus"/>
+                                th:field="*{Password}" required autofocus="autofocus"/>
                         </div>
 
 
@@ -72,7 +65,7 @@
                                 of service</a></label>
                         </div>
 
-                        <p> Already have an account? <a href="/static" th:href="@{/onbording}" style="color: #498A33;"> LogIn </a> </p>
+                        <p> Already have an account? <a  th:href="@{/login.html}" style="color: #498A33;"> LogIn </a> </p>
 
 
                         <div class="form-group form-button">

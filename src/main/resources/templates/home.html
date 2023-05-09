@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html html xmlns:th="https://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Homepage</title>
+
+  <link rel="stylesheet" href="homestyle.css" />
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
+</head>
+
+<body>
+
+<input type="checkbox" name="" id="menu-toggle" />
+<div class="overlay">
+  <label for="menu-toggle">
+    <span class="las la-window-close"></span>
+  </label>
+</div>
+
+<div class="sidebar">
+  <div class="sidebar-container">
+    <div class="brand">
+      <h3>
+        <span class="lab la-accusoft"></span>
+        Vote
+      </h3>
+    </div>
+
+    <div class="sidebar-avartar">
+      <div>
+        <img src="img/avatar.svg" alt="" />
+      </div>
+      <div class="avartar-info">
+        <div class="avartar-text">
+          <h4>Ashegbare Daniel</h4>
+          <small> 000-0000-000</small>
+        </div>
+        <span class="las la-arrow-down"></span>
+      </div>
+    </div>
+
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a href=""class="active">
+            <span class="las la-vote-yea"></span>
+            <span>Polling Area</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="Analytics.html">
+            <span class="lar la-chart-bar"></span>
+            <span>Analytics</span>
+          </a>
+        </li>
+        <li>
+          <a href="Notification.html">
+            <span class="las la-bell"></span>
+            <span>Notification</span>
+          </a>
+        </li>
+        <li>
+          <a href="Settings.html">
+            <span class="las la-cog"></span>
+            <span>Settings</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <span class="las la-cog"></span>
+            <span>Settings</span>
+          </a>
+        </li>
+
+        <li>
+
+          <a href="Welcome.html">
+            <span class="las la-sign-out-alt"></span>
+            <span>Logout</span>
+          </a>
+
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="main-content">
+  <header>
+    <div class="header-title-wrapper">
+
+      <div class="header-title">
+        <h1>Cast Your Votes Here</h1>
+
+      </div>
+    </div>
+
+  </header>
+
+  <!-- president-->
+  <main>
+    <section>
+      <h3 class="section-head">Overview</h3>
+      <div class="analytics">
+        <div class="analytic">
+          <div class="analytic-pres">
+            <div class="vote-category">
+              <img src="img/pres.png">
+              <h1>PRESIDENTIAL</h1>
+            </div>
+            <ul>
+              <li>
+                <div class="party-logo">
+                  <img src="img/accord.jpeg">
+                  <h1>Accord Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term1"class="party-check" />
+
+
+                </div>
+
+              </li>
+              <li>
+                <div class="party-logo">
+                  <img src="img/alliance.jpg">
+                  <h1>Action Alliance Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term2"class="party-check" />
+
+
+                </div>
+              </li>
+              <li>
+                <div class="party-logo">
+                  <img src="img/ADP.png">
+                  <h1>Action Democratic Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term3"class="party-check" />
+
+                </div>
+              </li>
+              <li>
+                <div class="party-logo">
+                  <img src="img/APP.png"/>
+                  <h1>Action Peoples Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/AAC.jpg">
+                  <h1>Africa Action Congress Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/ADC.jpg"/>
+                  <h1>African Democratic Congress</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/apc.webp">
+                  <h1>All Progressive Congress</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/APGA.jpg"/>
+                  <h1>All Progressive Grand Alliance</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/APM.jpg">
+                  <h1>Allied Peoples Movement</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/BootParty.jpg">
+                  <h1>Boot Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/laborparty.jpg">
+                  <h1>Labor Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/NRM.png">
+                  <h1>National Rescue Movement</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/NNPP.jpeg">
+                  <h1>New Nigeria Peoples Party </h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/PDP.jpg">
+                  <h1>Peoples Democratic Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/SDP.png">
+                  <h1>Social Democratic Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/YPP-Logo.jpeg">
+                  <h1>Young Progress Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/ZLP.jpg">
+                  <h1>Zenith Labor Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- Senate-->
+        <div class="analytic">
+          <div class="analytic-sen">
+            <div class="vote-category">
+              <img src="img/senate.png">
+              <h1>SENETORIAL</h1>
+            </div>
+            <ul>
+              <li>
+                <div class="party-logo">
+                  <img src="img/accord.jpeg">
+                  <h1>Accord Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+
+
+                </div>
+
+              </li>
+              <li>
+                <div class="party-logo">
+                  <img src="img/alliance.jpg">
+                  <h1>Action Alliance Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+
+
+                </div>
+              </li>
+              <li>
+                <div class="party-logo">
+                  <img src="img/ADP.png">
+                  <h1>Action Democratic Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+
+                </div>
+              </li>
+              <li>
+                <div class="party-logo">
+                  <img src="img/APP.png"/>
+                  <h1>Action Peoples Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/AAC.jpg">
+                  <h1>Africa Action Congress Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/ADC.jpg"/>
+                  <h1>African Democratic Congress</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/apc.webp">
+                  <h1>All Progressive Congress</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/APGA.jpg"/>
+                  <h1>All Progressive Grand Alliance</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/APM.jpg">
+                  <h1>Allied Peoples Movement</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/BootParty.jpg">
+                  <h1>Boot Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/laborparty.jpg">
+                  <h1>Labor Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/NRM.png">
+                  <h1>National Rescue Movement</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/NNPP.jpeg">
+                  <h1>New Nigeria Peoples Party </h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/PDP.jpg">
+                  <h1>Peoples Democratic Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/SDP.png">
+                  <h1>Social Democratic Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/YPP-Logo.jpeg">
+                  <h1>Young Progress Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/ZLP.jpg">
+                  <h1>Zenith Labor Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+
+        <!-- House of reps-->
+
+        <div class="analytic">
+          <div class="analytic-rep">
+            <div class="vote-category">
+              <img src="img/hor.png">
+              <h1>HOUSE OF REPRESENTATIVES</h1>
+            </div>
+            <ul>
+              <li>
+                <div class="party-logo">
+                  <img src="img/accord.jpeg">
+                  <h1>Accord Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+
+
+                </div>
+
+              </li>
+              <li>
+                <div class="party-logo">
+                  <img src="img/alliance.jpg">
+                  <h1>Action Alliance Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+
+
+                </div>
+              </li>
+              <li>
+                <div class="party-logo">
+                  <img src="img/ADP.png">
+                  <h1>Action Democratic Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+
+                </div>
+              </li>
+              <li>
+                <div class="party-logo">
+                  <img src="img/APP.png"/>
+                  <h1>Action Peoples Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/AAC.jpg">
+                  <h1>Africa Action Congress Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/ADC.jpg"/>
+                  <h1>African Democratic Congress</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/apc.webp">
+                  <h1>All Progressive Congress</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/APGA.jpg"/>
+                  <h1>All Progressive Grand Alliance</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/APM.jpg">
+                  <h1>Allied Peoples Movement</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/BootParty.jpg">
+                  <h1>Boot Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/laborparty.jpg">
+                  <h1>Labor Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/NRM.png">
+                  <h1>National Rescue Movement</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/NNPP.jpeg">
+                  <h1>New Nigeria Peoples Party </h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/PDP.jpg">
+                  <h1>Peoples Democratic Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/SDP.png">
+                  <h1>Social Democratic Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/YPP-Logo.jpeg">
+                  <h1>Young Progress Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+
+              <li>
+                <div class="party-logo">
+                  <img src="img/ZLP.jpg">
+                  <h1>Zenith Labor Party</h1>
+                  <input type="checkbox" name="agree" id="agree-term"class="party-check" />
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="vote-button">
+      <button class="btn btn-main">
+        <span class="las la-save"></span>
+        <a href="Verification.html">VOTE</a>
+      </button>
+    </div>
+
+
+
+
+  </main>
+</div>
+</body>
+</html>
